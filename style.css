@@ -52,7 +52,7 @@ strong, h3 {
     height: 100%;
     width: 100%;
     background-color: #212121;
-    font-family: "CascadiaCode";
+    font-family: 'Cascadia Code', sans-serif;
     padding: 0;
 
 }
@@ -88,7 +88,6 @@ button.active {
     flex-direction: row;
     align-items: center;
     font-size: 1.5em;
-    font-family: "CascadiaCodeBold";
     color: #eaeaea3f;
     background-color: #383838;
     z-index: 200;
