@@ -475,6 +475,7 @@ h4 {
     color: #9b9b9b;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     display: none;
+    overflow-y: scroll;
 }
 
 .pageContact.active {
@@ -732,6 +733,7 @@ h4 {
 .container_side {
     display: flex;
     width: 450px;
+    min-width: 300px;
     height: 100%;
     flex-direction: column;
     z-index: 10;
@@ -862,7 +864,7 @@ ul {
     justify-content: center;
     flex-direction: column;
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
     z-index: 450;
     width: 350px;
     height: 400px;
@@ -936,21 +938,7 @@ ul {
 
 @media screen and (max-width: 2390px) {
     
-.button1 {
-    width: 100%;
-    height: 40px;
-    font-size: 1em;
-}
 
-.ID {
-    font-size: 0.8em;
-    height: 50px;
-}
-   
-.OS {
-    font-size: 0.8em;
-    padding-bottom: 5px;
-}
 
     
 .contact, .projets, .presentation, .chara {
@@ -1023,58 +1011,7 @@ ul {
 
 
   /* Identity et system */ 
-  
-.identity {
-    width: 100%;
-    height: 50px;
-    font-size: 0.8em;
-}
 
-
-.system {
-    width: 100%;
-    height: 50px;
-    font-size: 0.8em;
-}
-
-.devW {
-    padding-left: 30px;
-    margin: 0;
-    line-height: 1.3em;
-}
-
-.logi {
-    padding-left: 0;
-    color: #eaeaeaa9;
-}
-
-.DLC {
-    padding-left: 40px;
-    color: #eaeaeaa9;
-}
-
-
-.kenP {
-    padding-left: 30px;
-    margin: 0;
-    height: 60px;
-    line-height: 1.3em;
-
-}
-
-.moi {
-    padding-left: 0;
-    color: #eaeaeaa9;
-}
-
-
-.avatar img {
-    width: 300px;
-    height: 350px;
-    position: absolute;
-    bottom: 10px;
-    z-index: 450;
-}
 
 .pagePres {
     line-height: 1.3em;
@@ -1089,12 +1026,15 @@ ul {
 }
 
 .moi {
-    padding-left: 0;
+    padding-left: 30px;
     color: #eaeaeaa9;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 
 }
 
+.kenP {
+    padding-left: 30px;
+}
 
 }
 
@@ -1237,14 +1177,18 @@ ul {
     }
     
     
-    .avatar img {
+    .avatar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 1%;
+        z-index: 450;
         width: 300px;
         height: 350px;
-        position: absolute;
         bottom: 10px;
-        z-index: 450;
     }
-    
+
+
     .pagePres {
         line-height: 1.3em;
         font-size: 0.8em;
@@ -1272,4 +1216,14 @@ ul {
     .projets.mobileactive {
         transform: translateY(100%);
     }
+
+    .contact_flex .enveloppe .front {
+        height: 350px;
+        width: 300px;
+      }
+    
+}
+    
+@media screen and (max-height: 900px) {
+  
 }
