@@ -1,10 +1,10 @@
 @font-face {
     font-family: "CascadiaCode";
-    src:url("https://github.com/GitpushKen/portfolio_flex/tree/main/fonts/CascadiaCode-Regular.otf");
+    src:url("/fonts/CascadiaCode-Regular.otf");
 }
 @font-face {
     font-family: "CascadiaCodeBold";
-    src:url("https://github.com/GitpushKen/portfolio_flex/tree/main/fonts/CascadiaMono-Bold.otf");
+    src:url("/fonts/CascadiaMono-Bold.otf");
 }
 
 
