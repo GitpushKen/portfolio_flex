@@ -1,13 +1,11 @@
 @font-face {
     font-family: "CascadiaCode";
-    src:url('/fonts/CascadiaCode-Regular.otf');
+    src:url("/fonts/CascadiaCode-Regular.otf");
 }
 @font-face {
     font-family: "CascadiaCodeBold";
-    src:url('/fonts/CascadiaMono-Bold.otf');
+    src:url("/fonts/CascadiaMono-Bold.otf");
 }
-
-
 
 /* Base */
 ::-webkit-scrollbar {
@@ -33,6 +31,8 @@ body {
     z-index: 0;
     user-select: none;
 }
+
+/**/
 
 a {
     text-decoration: underline #ffcc00;
