@@ -28,7 +28,6 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #212121;
-    font-family: "CascadiaCode";
     padding: 0;
     z-index: 0;
     user-select: none;
@@ -117,7 +116,6 @@ h4 {
     width: 100%;
     height: 50px;
     font-size: 1.3em;
-    font-family: "CascadiaCodeBold";
     z-index: 80;
     
 }
@@ -135,7 +133,6 @@ h4 {
     align-items: center;
     flex-direction: row;
     height: 40px;
-    font-family: "CascadiaCodeBold";
     z-index: 80;
     transition: ease .4s;
 }
@@ -223,7 +220,6 @@ h4 {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-    font-family: "CascadiaCodeBold";
     color: #eaeaea3f;
     background-color: #383838;
     border: none;
@@ -277,7 +273,6 @@ h4 {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-    font-family: "CascadiaCodeBold";
     color: #eaeaea3f;
     background-color: #383838;
     border: none;
@@ -307,7 +302,6 @@ h4 {
     display: flex;
     flex-direction: row;
     font-size: 1.2em;
-    font-family: "CascadiaCodeBold";
     color: #eaeaea3f;
     border: none;
     background-color: #2727276b;
@@ -342,7 +336,6 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2vh 16vh 17vh 17vh 16vh;
     gap: 30px;
-    font-family: "CascadiaCodeBold";
     line-break: normal;
     color: #9b9b9b;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
@@ -398,7 +391,6 @@ h4 {
     width: 97%;
     display: none;
     flex-direction: row;
-    font-family: "CascadiaCodeBold";
     justify-content:end;
     color: #9b9b9b;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
@@ -468,7 +460,6 @@ h4 {
     width: 95%;
     height: 95%;
     position: relative;
-    font-family: "CascadiaCodeBold";
     color: #9b9b9b;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
     display: none;
@@ -737,7 +728,6 @@ h4 {
 .menu {
     width: 100%;
     display: flex;
-    font-family: "CascadiaCodeBold";
     flex-direction: column;
     transform: translateY(-100%);
     transition: ease .6s;
@@ -832,7 +822,6 @@ h4 {
 
 ul {
     margin: 0;
-    font-family: "CascadiaCode";
     color: #E2B713;
     line-break: auto;
 }
