@@ -29,11 +29,10 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #212121;
-    font-family: 'Cascadia Code', sans-serif;
+    font-family: "CascadiaCode";
     padding: 0;
     z-index: 0;
     user-select: none;
-    
 }
 
 a {
@@ -52,7 +51,7 @@ strong, h3 {
     height: 100%;
     width: 100%;
     background-color: #212121;
-    font-family: 'Cascadia Code', sans-serif;
+    font-family: "CascadiaCode";
     padding: 0;
 
 }
