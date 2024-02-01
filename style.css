@@ -29,7 +29,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #212121;
-    font-family: "CascadiaCode";
+    font-family: 'Cascadia Code', sans-serif;
     padding: 0;
     z-index: 0;
     user-select: none;
