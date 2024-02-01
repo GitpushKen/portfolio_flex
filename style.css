@@ -350,6 +350,7 @@ h4 {
     display: none;
     line-height: 1.3em;
     font-size: 1em;
+    overflow-y: scroll;
 }
 
 .intro {
@@ -730,7 +731,7 @@ h4 {
 
 .container_side {
     display: flex;
-    width: 18%;
+    width: 450px;
     height: 100%;
     flex-direction: column;
     z-index: 10;
@@ -859,16 +860,16 @@ ul {
 .avatar {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    z-index: 450;
+    width: 350px;
+    height: 400px;
 }
 
 .avatar img {
-    width: 350px;
-    height: 400px;
-    position: absolute;
-    bottom: 10px;
-    z-index: 450;
+    object-fit: contain;
 }
 
 .table {
@@ -921,7 +922,7 @@ ul {
 .crt::before {
     content: " ";
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
