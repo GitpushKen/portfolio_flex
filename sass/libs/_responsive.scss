@@ -1,0 +1,372 @@
+
+@media screen and (max-width: 950px) {
+    .all {
+        display: none;
+    }
+    .allMobile {
+        display: flex;
+    }
+
+
+    .pageContactM, .pagePresM, .pageCharaM {
+        display: none;
+
+        &.mobile-active {
+            display: flex;
+        }
+    }
+
+    .container_navM {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        z-index: 20;
+    }
+    
+    .contactM, .projetsM, .presentationM, .charaM {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: 1.2em;
+        font-family: "CascadiaCodeBold";
+        color: #eaeaea3f;
+        border: none;
+        background-color: #2727276b;
+        padding-left: 15px;
+        padding-top: 12px;
+        z-index: 21;
+        text-align: center;
+        justify-content: center;
+        transition: none;
+    }
+    
+    .avatarM {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+        z-index: 450;
+        width: 100vw;
+        height: 100%[];
+
+
+        img {
+            object-fit: contain;
+        }
+    }
+    
+    .tableM {
+        width: 100vw; 
+        height: 15px;
+        background-color: #272727;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 400;
+    }
+    
+    .button1 {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.5em;
+        color: #eaeaea3f;
+        background-color: #3838388c;
+        z-index: 500;
+        border: none;
+        position: absolute;
+        
+        &.active {
+            color: #E2B713;
+        }
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        font-family: "CascadiaCodeBold";
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: ease .6s;
+        background-color: #212121;
+        z-index: 60;
+
+        &.active {
+            transform: translateY(0%);
+        }
+    }
+
+}
+    
+
+@media screen and (max-width: 1850px) {
+    
+    .button1 {
+        width: 100%;
+        height: 40px;
+        font-size: 1em;
+    }
+    
+    .ID {
+        font-size: 0.8em;
+        height: 50px;
+    }
+       
+    .OS {
+        font-size: 0.8em;
+        padding-bottom: 5px;
+    }
+    
+        
+    .contact, .projets, .presentation, .chara {
+        font-size: 1em;
+        padding-left: 15px;
+        padding-top: 12px;
+    
+    }
+    
+    /* Contact */ 
+    .contact_flex .enveloppe .front {
+        height: 350px;
+        width: 500px;
+      }
+    
+      .contact_flex .enveloppe .icon {
+        width: 200px;
+        padding-top: 30px;
+      }
+    
+      .contact_flex .enveloppe .icon2 {
+        width: 200px;
+        padding-top: 30px;
+      }
+    
+      .contact_flex .enveloppe .feuille {
+        height: 200px;
+        width: 400px;
+      }
+      .contact_flex .enveloppe .feuille h2 {
+        padding: 10px 15px;
+        font-size: 15px;
+      }
+      .contact_flex .enveloppe .feuille h3 {
+        padding-left: 25px;
+        padding-top: 2px;
+        font-size: 12px;
+      }
+      .contact_flex .enveloppe .feuille h2, .contact_flex .enveloppe .feuille h3 {
+        opacity: 0.4;
+        color: rgb(163, 161, 139);
+      }
+      .contact_flex .enveloppe .form {
+        height: 240px;
+        width: 450px;
+        border-radius: 15px;
+        padding-bottom: 40px;
+      }
+      .contact_flex .enveloppe .form .item {
+        display: flex;
+        height: 340px;
+        z-index: 3;
+        margin-top: 50px;
+      }
+      .contact_flex .enveloppe .form .item .submitForm {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    
+        z-index: 3;
+      }
+      .contact_flex .enveloppe .form .item .submitForm h4 {
+        margin-bottom: 30px;
+      }
+    
+      .contact_flex .enveloppe .form .item .submitForm .contactMe {
+        margin: 0;
+        font-size: 1em;
+      }
+    
+    
+      /* Identity et system */ 
+      
+    .identity {
+        width: 100%;
+        height: 50px;
+        font-size: 0.8em;
+    }
+    
+    
+    .system {
+        width: 100%;
+        height: 50px;
+        font-size: 0.8em;
+    }
+    
+    .devW {
+        padding-left: 30px;
+        margin: 0;
+        line-height: 1.3em;
+    }
+    
+    .logi {
+        padding-left: 0;
+        color: #eaeaeaa9;
+    }
+    
+    .DLC {
+        padding-left: 40px;
+        color: #eaeaeaa9;
+    }
+    
+    
+
+    
+    .kenP {
+        padding-left: 30px;
+        margin: 0;
+        height: 60px;
+        line-height: 1.3em;
+        background-color: #212121;
+
+    }
+
+    .moi {
+        padding-left: 0;
+        color: #eaeaeaa9;
+        padding-bottom: 40px;
+    
+    }
+    
+    
+    .avatar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 1%;
+        z-index: 450;
+        width: 300px;
+        height: 350px;
+        bottom: 10px;
+    }
+
+
+    .pagePres {
+        line-height: 1.3em;
+        font-size: 0.8em;
+    }
+    
+    .intro {
+        grid-column: 1/5;
+        grid-row: 2/2;
+        width: 95%;
+        height: 95%;
+    }
+    
+    }
+
+    
+@media screen and (max-width: 2390px) {
+    
+
+
+    
+    .contact, .projets, .presentation, .chara {
+        font-size: 1em;
+        padding-left: 15px;
+        padding-top: 12px;
+    
+    }
+    
+    /* Contact */ 
+    .contact_flex .enveloppe .front {
+        height: 350px;
+        width: 500px;
+      }
+    
+      .contact_flex .enveloppe .icon {
+        width: 200px;
+        padding-top: 30px;
+      }
+    
+      .contact_flex .enveloppe .icon2 {
+        width: 200px;
+        padding-top: 30px;
+      }
+    
+      .contact_flex .enveloppe .feuille {
+        height: 200px;
+        width: 400px;
+      }
+      .contact_flex .enveloppe .feuille h2 {
+        padding: 10px 15px;
+        font-size: 15px;
+      }
+      .contact_flex .enveloppe .feuille h3 {
+        padding-left: 25px;
+        padding-top: 2px;
+        font-size: 12px;
+      }
+      .contact_flex .enveloppe .feuille h2, .contact_flex .enveloppe .feuille h3 {
+        opacity: 0.4;
+        color: rgb(163, 161, 139);
+      }
+      .contact_flex .enveloppe .form {
+        height: 240px;
+        width: 450px;
+        border-radius: 15px;
+        padding-bottom: 40px;
+      }
+      .contact_flex .enveloppe .form .item {
+        display: flex;
+        height: 340px;
+        z-index: 3;
+        margin-top: 50px;
+      }
+      .contact_flex .enveloppe .form .item .submitForm {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    
+        z-index: 3;
+      }
+      .contact_flex .enveloppe .form .item .submitForm h4 {
+        margin-bottom: 30px;
+      }
+    
+      .contact_flex .enveloppe .form .item .submitForm .contactMe {
+        margin: 0;
+        font-size: 1em;
+      }
+    
+    
+      /* Identity et system */ 
+    
+    
+    .pagePres {
+        line-height: 1.3em;
+        font-size: 0.8em;
+    }
+    
+    .intro {
+        grid-column: 1/5;
+        grid-row: 2/2;
+        width: 95%;
+        height: 95%;
+    }
+    
+    .moi {
+        padding-left: 30px;
+        color: #eaeaeaa9;
+        padding-bottom: 0;
+    
+    }
+    
+    .kenP {
+        padding-left: 30px;
+    }
+    
+    }
+    

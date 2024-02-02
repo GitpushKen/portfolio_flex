@@ -7,7 +7,7 @@
     <meta http-equiv='pragma' content='no-cache'>
     <meta http-equiv='expires' content='0'> 
     <title>Ken</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/sass/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -21,16 +21,16 @@
                     <button class="register">(C'est par là)</button>
                 </div>
                 
-            </div>
+    </div>
 
-            <div class="menu_perso2">
+    <div class="menu_perso2">
                 <!-- fonction qui permet de maintenir le menu du click droit même si on clique dessus -->
                         <div onclick="displayHold2()" class="base2">
                             <h4><strong>Vous y êtes presque !</strong></h4>
                             <p>Cliquez sur l'enveloppe pour que nous fassions plus ample connaissance !</p>
                         </div>
                         
-                    </div>
+    </div>
 
 <!-- fonction qui permet de faire disparaître le menu du click droit si on clique ailleurs -->
     <div onclick="contextMenu()" class="all">
@@ -210,22 +210,8 @@
     </div>
 
     <div onclick="contextMenu()" class="allMobile">
-        <div class="navM">
-        <!-- plus tard
-            <div id="lightOn">
-                <img class="lightImg" src="assets/pics/icons/pngegg.png" alt="">
-            </div>
-            <div id="audioClick">
-                <img class="audioImg" src="assets/pics/icons/pngegg.png" alt="">
-            </div>  -->
-            <div class="container_navM">  
-                <button class="contact">Me contacter</button>
-                <button class="chara">Chara-design</button>
-                <button class="presentation">Présentation</button>
-            </div>
-        </div>
         <div class="pageM">
-            <div class="container_side">
+            <div class="container_sideM">
                 <div class="button1">
                     <h4 class="name">> Ken_PEROT</h4>
                 </div>
@@ -280,11 +266,25 @@
                     </div>
                 </div>
 
-                <div class="avatar">
+                <div class="avatarM">
                     <img src="assets/videos/1.gif" alt="">  
                 </div>
-                <div class="table"></div>
+                <div class="tableM"></div>
             </div>
+            <div class="navM">
+                <!-- plus tard
+                    <div id="lightOn">
+                        <img class="lightImg" src="assets/pics/icons/pngegg.png" alt="">
+                    </div>
+                    <div id="audioClick">
+                        <img class="audioImg" src="assets/pics/icons/pngegg.png" alt="">
+                    </div>  -->
+                    <div class="container_navM">  
+                        <button class="contactM">Me contacter</button>
+                        <button class="charaM">Chara-design</button>
+                        <button class="presentationM">Présentation</button>
+                    </div>
+                </div>
            
             <div class="container_mainM">
                 <div class="pagePresM">
@@ -388,6 +388,6 @@
     <div class="crt"></div>
 
     <script src="./scripts/nav.js"></script>
-    <script src="mobile.js" ></script>
+
 </body>
 </html>
