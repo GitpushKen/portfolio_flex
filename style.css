@@ -7,6 +7,10 @@
   font-family: "CascadiaCodeBold";
   src: url("../portfolio_flex/fonts/CascadiaMono-Bold.otf");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /* Base */
 ::-webkit-scrollbar {
   display: none;
@@ -933,13 +937,13 @@ ul {
     padding-inline: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #272727;
+    background-color: #212121;
     overflow: hidden;
   }
   .baseM {
     height: 100%;
     width: 100%;
-    background-color: #272727;
+    background-color: #212121;
     display: flex;
     z-index: 20;
     flex-direction: column;
@@ -975,7 +979,7 @@ ul {
   .infoM button {
     width: 100%;
     border: none;
-    background-color: #333333;
+    background-color: #292929;
     font-family: "CascadiaCodeBold";
     font-size: 1em;
   }
@@ -999,7 +1003,7 @@ ul {
     transform: translateY(0);
   }
   .specsM .identitY {
-    padding: 20px 0 0 30px;
+    padding: 40px 0 0 30px;
     display: flex;
     width: 80%;
     height: 400px;
@@ -1019,13 +1023,13 @@ ul {
     color: #ffbb00;
   }
   .specsM .identitY .kenP {
-    background-color: #272727;
+    background-color: #212121;
   }
   .specsM .systeM {
     display: flex;
     width: 80%;
     height: 400px;
-    padding: 20px 0 0 30px;
+    padding: 10px 0 0 30px;
     transform: translateY(-200%);
     transition: 0.4s;
     font-size: 1em;

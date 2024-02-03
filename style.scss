@@ -10,7 +10,9 @@
     src:url("../portfolio_flex/fonts/CascadiaMono-Bold.otf");
 }
 
-
+html {
+    scroll-behavior: smooth;
+  }
 
 /* Base */
 ::-webkit-scrollbar {
