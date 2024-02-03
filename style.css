@@ -1029,7 +1029,7 @@ ul {
     display: flex;
     width: 80%;
     height: 400px;
-    transform: translateY(-200%);
+    transform: translateY(-150%);
     transition: 0.4s;
     font-size: 1em;
     font-family: "CascadiaCodeBold";
