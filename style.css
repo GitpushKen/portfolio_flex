@@ -1026,7 +1026,7 @@ ul {
     background-color: #212121;
   }
 }
-@media screen and (max-width: 440px) and (max-width: 391px) {
+@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
   .specsM .identitY {
     display: flex;
     width: 80%;
@@ -1062,7 +1062,7 @@ ul {
     color: #ffbb00;
   }
 }
-@media screen and (max-width: 440px) and (max-width: 391px) {
+@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
   .specsM .systeM {
     display: flex;
     width: 80%;
@@ -1111,7 +1111,7 @@ ul {
     width: 100%;
   }
 }
-@media screen and (max-width: 440px) and (max-width: 391px) {
+@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
   .avatarM img {
     height: 350px;
     width: 300px;
@@ -1126,7 +1126,7 @@ ul {
     transform: translateY(-440px);
   }
 }
-@media screen and (max-width: 440px) and (max-width: 391px) {
+@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
   .mainM {
     transform: translateY(-290px);
   }

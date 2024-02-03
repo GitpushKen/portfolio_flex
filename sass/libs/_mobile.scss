@@ -137,7 +137,7 @@ body {
             background-color: $primary;
         }
 
-        @media screen and (max-width:391px) {
+        @media screen and (max-aspect-ratio: 20/9) {
             display: flex;
             width: 80%;
             height: 400px;
@@ -175,7 +175,7 @@ body {
             color: $highlights;
         }
 
-        @media screen and (max-width:391px) {
+        @media screen and (max-aspect-ratio: 20/9) {
             display: flex;
             width: 80%;
             height: 400px;
@@ -232,7 +232,7 @@ body {
         width: 100%;
     }
 
-    @media screen and (max-width:391px) {
+    @media screen and (max-aspect-ratio: 20/9) {
         img {
             height: 350px;
             width: 300px;
@@ -248,7 +248,7 @@ body {
     z-index: 15;
     transform: translateY(-440px);
 
-    @media screen and (max-width:391px) {
+    @media screen and (max-aspect-ratio: 20/9) {
         transform: translateY(-290px);
     
     }
