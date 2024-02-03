@@ -19,6 +19,10 @@ a {
   text-decoration: underline #ffcc00;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 strong, h3 {
   color: #ffcc00;
 }
@@ -258,7 +262,6 @@ body {
   height: 100%;
   justify-content: center;
   text-align: left;
-  overflow-y: scroll;
 }
 
 .pagePresM {

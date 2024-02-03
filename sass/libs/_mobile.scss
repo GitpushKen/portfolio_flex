@@ -112,7 +112,7 @@ body {
     }
 
     .identitY {
-        padding: 40px 0 0 10px;
+        padding: 40px 0 0 0;
         display: flex;
         width: 80%;
         height: 400px;
@@ -136,13 +136,27 @@ body {
         .kenP {
             background-color: $primary;
         }
+
+        @media screen and (max-width:380px) {
+            display: flex;
+            width: 80%;
+            height: 400px;
+            transform: translateY(-300%);
+            transition: 0.4s;
+            font-size: 0.9em;
+            font-family: "CascadiaCodeBold";
+            color: #858585;
+
+            &.active {
+                transform: translateY(20%);
+            }
+        }
     }
 
     .systeM {
         display: flex;
         width: 80%;
         height: 400px;
-        padding: 0 0 0 0;
         transform: translateY(-200%);
         transition: 0.4s;
         font-size: 1em;
@@ -159,6 +173,21 @@ body {
 
         li {
             color: $highlights;
+        }
+
+        @media screen and (max-width:380px) {
+            display: flex;
+            width: 80%;
+            height: 400px;
+            transform: translateY(-300%);
+            transition: 0.4s;
+            font-size: 0.9em;
+            font-family: "CascadiaCodeBold";
+            color: #858585;
+
+            &.active {
+                transform: translateY(-40%);
+            }
         }
     }
 
@@ -202,6 +231,14 @@ body {
         background-color: $secondary;
         width: 100%;
     }
+
+    @media screen and (max-width:380px) {
+        img {
+            height: 350px;
+            width: 300px;
+        }
+    
+    }
 }
 
 .mainM {
@@ -211,8 +248,8 @@ body {
     z-index: 15;
     transform: translateY(-440px);
 
-    @media screen and (max-width:376px) {
-        transform: translateY(-330px);
+    @media screen and (max-width:380px) {
+        transform: translateY(-310px);
     }
     
     .introM {

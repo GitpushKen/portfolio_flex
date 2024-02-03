@@ -1003,7 +1003,7 @@ ul {
     transform: translateY(0);
   }
   .specsM .identitY {
-    padding: 40px 0 0 10px;
+    padding: 40px 0 0 0;
     display: flex;
     width: 80%;
     height: 400px;
@@ -1025,11 +1025,27 @@ ul {
   .specsM .identitY .kenP {
     background-color: #212121;
   }
+}
+@media screen and (max-width: 440px) and (max-width: 380px) {
+  .specsM .identitY {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    transform: translateY(-300%);
+    transition: 0.4s;
+    font-size: 0.9em;
+    font-family: "CascadiaCodeBold";
+    color: #858585;
+  }
+  .specsM .identitY.active {
+    transform: translateY(20%);
+  }
+}
+@media screen and (max-width: 440px) {
   .specsM .systeM {
     display: flex;
     width: 80%;
     height: 400px;
-    padding: 0 0 0 0;
     transform: translateY(-200%);
     transition: 0.4s;
     font-size: 1em;
@@ -1045,6 +1061,23 @@ ul {
   .specsM .systeM li {
     color: #ffbb00;
   }
+}
+@media screen and (max-width: 440px) and (max-width: 380px) {
+  .specsM .systeM {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    transform: translateY(-300%);
+    transition: 0.4s;
+    font-size: 0.9em;
+    font-family: "CascadiaCodeBold";
+    color: #858585;
+  }
+  .specsM .systeM.active {
+    transform: translateY(-40%);
+  }
+}
+@media screen and (max-width: 440px) {
   #ken {
     width: 100%;
     font-size: 1em;
@@ -1077,6 +1110,14 @@ ul {
     background-color: #272727;
     width: 100%;
   }
+}
+@media screen and (max-width: 440px) and (max-width: 380px) {
+  .avatarM img {
+    height: 350px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 440px) {
   .mainM {
     width: 95%;
     height: 40%;
@@ -1085,9 +1126,9 @@ ul {
     transform: translateY(-440px);
   }
 }
-@media screen and (max-width: 440px) and (max-width: 376px) {
+@media screen and (max-width: 440px) and (max-width: 380px) {
   .mainM {
-    transform: translateY(-330px);
+    transform: translateY(-310px);
   }
 }
 @media screen and (max-width: 440px) {
