@@ -1036,7 +1036,7 @@ ul {
     color: #858585;
   }
   .specsM .systeM.active {
-    transform: translateY(-40%);
+    transform: translateY(-45%);
   }
   .specsM .systeM ul {
     list-style: none;
