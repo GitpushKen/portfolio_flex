@@ -1,4 +1,6 @@
 
+
+
 @media screen and (max-width: 950px) {
     .all {
         display: none;
@@ -6,101 +8,8 @@
     .allMobile {
         display: flex;
     }
-
-
-    .pageContactM, .pagePresM, .pageCharaM {
-        display: none;
-
-        &.mobile-active {
-            display: flex;
-        }
-    }
-
-    .container_navM {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        z-index: 20;
-    }
-    
-    .contactM, .projetsM, .presentationM, .charaM {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        font-size: 1.2em;
-        font-family: "CascadiaCodeBold";
-        color: #eaeaea3f;
-        border: none;
-        background-color: #2727276b;
-        padding-left: 15px;
-        padding-top: 12px;
-        z-index: 21;
-        text-align: center;
-        justify-content: center;
-        transition: none;
-    }
-    
-    .avatarM {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: 0px;
-        z-index: 450;
-        width: 100vw;
-        height: 100%[];
-
-
-        img {
-            object-fit: contain;
-        }
-    }
-    
-    .tableM {
-        width: 100vw; 
-        height: 15px;
-        background-color: #272727;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 400;
-    }
-    
-    .button1 {
-        width: 100%;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 1.5em;
-        color: #eaeaea3f;
-        background-color: #3838388c;
-        z-index: 500;
-        border: none;
-        position: absolute;
-        
-        &.active {
-            color: #E2B713;
-        }
-    }
-    .menu {
-        width: 100%;
-        display: flex;
-        font-family: "CascadiaCodeBold";
-        flex-direction: column;
-        transform: translateY(-100%);
-        transition: ease .6s;
-        background-color: #212121;
-        z-index: 60;
-
-        &.active {
-            transform: translateY(0%);
-        }
-    }
-
-}
-    
+    @import 'mobile';
+  }
 
 @media screen and (max-width: 1850px) {
     

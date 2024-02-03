@@ -262,27 +262,10 @@ h4 {
   height: 50px;
 }
 
-.navM {
-  display: flex;
-  z-index: 20;
-  background-color: #212121;
-  width: 100vw;
-  height: 40px;
-}
-
 .container_nav {
   width: 100%;
   height: 100%;
   flex-direction: row-reverse;
-  gap: 5px;
-  display: flex;
-  z-index: 20;
-}
-
-.container_navM {
-  width: 100%;
-  height: 100%;
-  justify-content: space-around;
   gap: 5px;
   display: flex;
   z-index: 20;
@@ -725,10 +708,6 @@ h4 {
   z-index: 10;
 }
 
-.container_sideM {
-  z-index: 70;
-}
-
 .menu {
   width: 100%;
   display: flex;
@@ -924,86 +903,434 @@ ul {
   .allMobile {
     display: flex;
   }
-  .pageContactM, .pagePresM, .pageCharaM {
-    display: none;
+  @font-face {
+    font-family: "CascadiaCode";
+    src: url(assets/fonts/CascadiaCode-Regular.otf);
   }
-  .pageContactM.mobile-active, .pagePresM.mobile-active, .pageCharaM.mobile-active {
-    display: flex;
-  }
-  .container_navM {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    z-index: 20;
-  }
-  .contactM, .projetsM, .presentationM, .charaM {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    font-size: 1.2em;
+  @font-face {
     font-family: "CascadiaCodeBold";
-    color: rgba(234, 234, 234, 0.2470588235);
-    border: none;
-    background-color: rgba(39, 39, 39, 0.4196078431);
-    padding-left: 15px;
-    padding-top: 12px;
-    z-index: 21;
-    text-align: center;
-    justify-content: center;
-    transition: none;
+    src: url(assets/fonts/CascadiaMono-Bold.otf);
   }
-  .avatarM {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0px;
-    z-index: 450;
+  @font-face {
+    font-family: "CascadiaCode";
+    src: url(/assets/fonts/CascadiaCode-Regular.otf);
+  }
+  @font-face {
+    font-family: "CascadiaCodeBold";
+    src: url(/assets/fonts/CascadiaMono-Bold.otf);
+  }
+  a {
+    -webkit-text-decoration: underline #ffcc00;
+    text-decoration: underline #ffcc00;
+  }
+  strong, h3 {
+    color: #ffcc00;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    margin-inline: 0;
+    padding-inline: 0;
+    height: 100vh;
     width: 100vw;
-    height: 100% [];
-  }
-  .avatarM img {
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .tableM {
-    width: 100vw;
-    height: 15px;
     background-color: #272727;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 400;
+    overflow: hidden;
   }
-  .button1 {
+  .baseM {
+    height: 100%;
     width: 100%;
-    height: 50px;
+    background-color: #272727;
     display: flex;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+  }
+  .baseM.inactive {
+    transform: translateY(-100%);
+  }
+  .navM {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: absolute;
     flex-direction: row;
     align-items: center;
     font-size: 1.5em;
-    color: rgba(234, 234, 234, 0.2470588235);
-    background-color: rgba(56, 56, 56, 0.5490196078);
-    z-index: 500;
+    background-color: #383838;
+    z-index: 25;
+  }
+  .infoM {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    transform: translateY(-60px);
+    transition: 0.4s;
+    z-index: 20;
+  }
+  .infoM.active {
+    transform: translateY(60px);
+  }
+  .infoM button {
+    width: 100%;
     border: none;
+    background-color: #333333;
+    font-family: "CascadiaCodeBold";
+    font-size: 1em;
+  }
+  .infoM #idM, .infoM #osM {
+    color: rgba(234, 234, 234, 0.2470588235);
+    height: 50px;
+  }
+  .infoM #idM.active, .infoM #osM.active {
+    color: #ffbb00;
+  }
+  .specsM {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    transform: translateY(-100%);
+    transition: 0.4s;
+    z-index: 10;
+  }
+  .specsM.active {
+    transform: translateY(0);
+  }
+  .specsM .identitY {
+    padding: 20px 0 0 30px;
+    display: flex;
+    width: 80%;
+    height: 400px;
+    transform: translateY(-100%);
+    transition: 0.4s;
+    color: #858585;
+    font-size: 1em;
+    font-family: "CascadiaCodeBold";
+  }
+  .specsM .identitY.active {
+    transform: translateY(20%);
+  }
+  .specsM .identitY ul {
+    list-style: none;
+  }
+  .specsM .identitY li {
+    color: #ffbb00;
+  }
+  .specsM .identitY .kenP {
+    background-color: #272727;
+  }
+  .specsM .systeM {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    padding: 20px 0 0 30px;
+    transform: translateY(-200%);
+    transition: 0.4s;
+    font-size: 1em;
+    font-family: "CascadiaCodeBold";
+    color: #858585;
+  }
+  .specsM .systeM.active {
+    transform: translateY(-80%);
+  }
+  .specsM .systeM ul {
+    list-style: none;
+  }
+  .specsM .systeM li {
+    color: #ffbb00;
+  }
+  #ken {
+    width: 100%;
+    font-size: 1em;
+    background-color: #383838;
+    z-index: 10;
+    border: none;
+    font-family: "CascadiaCodeBold";
+    display: flex;
+    padding-left: 25px;
+    color: rgba(234, 234, 234, 0.2470588235);
+  }
+  #ken.active {
+    color: #ffbb00;
+  }
+  .avatarM {
+    display: flex;
+    flex-direction: column;
     position: absolute;
+    bottom: 0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  .button1.active {
-    color: #E2B713;
+  .avatarM img {
+    height: 400px;
+    width: 350px;
   }
-  .menu {
+  .avatarM .tableM {
+    height: 10px;
+    background-color: #272727;
+    width: 100%;
+  }
+  .mainM {
+    width: 95%;
+    height: 40%;
+    display: flex;
+    z-index: 15;
+    transform: translateY(-440px);
+  }
+  .mainM .introM {
+    font-family: "CascadiaCodeBold";
+    font-size: 1em;
+    text-align: justify;
+    color: rgba(234, 234, 234, 0.2470588235);
+    padding: 0 15px 15px 10px;
+    transition: 0.4s;
+    opacity: 1;
+  }
+  .mainM .introM.inactive {
+    opacity: 0;
+  }
+  .corpsM {
+    height: 100%;
+    width: 100%;
+    background-color: #272727;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(200%);
+    z-index: 10;
+    transition: 0.4s;
+  }
+  .corpsM.active {
+    transform: translateY(-100%);
+  }
+  .corpsM .back {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    color: #858585;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "CascadiaCodeBold";
+    background-color: #333333;
+  }
+  .nav2 {
+    height: 50px;
     width: 100%;
     display: flex;
-    font-family: "CascadiaCodeBold";
-    flex-direction: column;
-    transform: translateY(-100%);
-    transition: ease 0.6s;
-    background-color: #212121;
-    z-index: 60;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .menu.active {
-    transform: translateY(0%);
+  .nav2 button {
+    width: 100%;
+    border: none;
+    background-color: #333333;
+    font-family: "CascadiaCodeBold";
+    font-size: 1em;
+  }
+  .nav2 #presM, .nav2 #charM, .nav2 #contM {
+    color: rgba(234, 234, 234, 0.292);
+    height: 50px;
+  }
+  .nav2 #presM.active, .nav2 #charM.active, .nav2 #contM.active {
+    color: #ffbb00;
+  }
+  .mainM2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .pagesM {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: left;
+    overflow-y: scroll;
+  }
+  .pagePresM {
+    display: none;
+    width: 90%;
+    height: 150%;
+    flex-direction: column;
+    font-family: "CascadiaCodeBold";
+    line-break: normal;
+    color: #9b9b9b;
+    line-height: 1.3em;
+    font-size: 1em;
+    overflow-y: scroll;
+  }
+  .pagePresM.active {
+    display: flex;
+  }
+  .pageCharM {
+    display: none;
+    width: 90%;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "CascadiaCodeBold";
+    line-break: normal;
+    color: #9b9b9b;
+    line-height: 1.3em;
+    font-size: 1em;
+    overflow-y: scroll;
+    background-color: #272727;
+    justify-content: center;
+    align-items: center;
+  }
+  .pageCharM.active {
+    display: flex;
+  }
+  .pageContM {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "CascadiaCodeBold";
+    line-break: normal;
+    color: #9b9b9b;
+    line-height: 1.3em;
+    font-size: 1em;
+    background-color: #333333;
+  }
+  .pageContM.active {
+    display: flex;
+  }
+  .contact_flexM {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .contact_flexM p {
+    font-size: 2em;
+  }
+  .contact_flexM .enveloppeM {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    z-index: 1;
+  }
+  .contact_flexM .enveloppeM .frontM {
+    background-color: rgba(51, 51, 51, 0.9137254902);
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+    position: absolute;
+    height: 350px;
+    width: 440px;
+    display: flex;
+    z-index: 1;
+    transition: ease-in-out 0.3s;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_flexM .enveloppeM .iconM {
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 1;
+    transition: ease-in-out 0.3s;
+    z-index: 20;
+    padding-top: 30px;
+  }
+  .contact_flexM .enveloppeM .iconM img {
+    width: 250px;
+  }
+  .contact_flexM .enveloppeM .icon2M {
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0%;
+    transition: ease-in-out 0.3s;
+    z-index: 20;
+    padding-top: 30px;
+  }
+  .contact_flexM .enveloppeM .icon2M img {
+    width: 250px;
+  }
+  .contact_flexM .enveloppeM .feuilleM {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: beige;
+    display: flex;
+    z-index: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    flex-direction: column;
+  }
+  .contact_flexM .enveloppeM .feuilleM h2 {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .contact_flexM .enveloppeM .feuilleM h3 {
+    padding-left: 25px;
+    padding-top: 2px;
+    font-size: 12px;
+  }
+  .contact_flexM .enveloppeM .feuilleM h2, h3 {
+    opacity: 0.4;
+    color: rgb(163, 161, 139);
+  }
+  .contact_flexM .enveloppeM .formM {
+    transform: translateY(240px);
+    position: absolute;
+    height: 240px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: rgba(112, 171, 248, 0);
+    display: flex;
+    z-index: 2;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_flexM .enveloppeM .formM .itemM {
+    display: flex;
+    height: 140px;
+    z-index: 3;
+    margin-top: 10px;
+  }
+  .contact_flexM .enveloppeM .formM .itemM .submitFormM {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-size: 0.6em;
+  }
+  .contact_flexM .enveloppeM .formM .itemM .submitFormM .contactMeM {
+    margin: 0;
+    font-size: 2em;
+  }
+  .enveloppeM.active .frontM {
+    box-shadow: 0px -19px 15px -15px rgba(0, 0, 0, 0.349);
+  }
+  .enveloppeM.active .feuilleM {
+    transform: translateY(-130px);
+    opacity: 1;
+  }
+  .enveloppeM.active .iconM {
+    opacity: 0;
+  }
+  .enveloppeM.active .icon2M {
+    opacity: 100;
+  }
+  .enveloppeM.active .formM {
+    opacity: 1;
   }
 }
 @media screen and (max-width: 1850px) {
