@@ -1025,23 +1025,6 @@ ul {
   .specsM .identitY .kenP {
     background-color: #212121;
   }
-}
-@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
-  .specsM .identitY {
-    display: flex;
-    width: 80%;
-    height: 400px;
-    transform: translateY(-300%);
-    transition: 0.4s;
-    font-size: 0.9em;
-    font-family: "CascadiaCodeBold";
-    color: #858585;
-  }
-  .specsM .identitY.active {
-    transform: translateY(20%);
-  }
-}
-@media screen and (max-width: 440px) {
   .specsM .systeM {
     display: flex;
     width: 80%;
@@ -1053,7 +1036,7 @@ ul {
     color: #858585;
   }
   .specsM .systeM.active {
-    transform: translateY(-80%);
+    transform: translateY(-60%);
   }
   .specsM .systeM ul {
     list-style: none;
@@ -1061,23 +1044,6 @@ ul {
   .specsM .systeM li {
     color: #ffbb00;
   }
-}
-@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
-  .specsM .systeM {
-    display: flex;
-    width: 80%;
-    height: 400px;
-    transform: translateY(-300%);
-    transition: 0.4s;
-    font-size: 0.9em;
-    font-family: "CascadiaCodeBold";
-    color: #858585;
-  }
-  .specsM .systeM.active {
-    transform: translateY(-30%);
-  }
-}
-@media screen and (max-width: 440px) {
   #ken {
     width: 100%;
     font-size: 1em;
@@ -1102,36 +1068,21 @@ ul {
     align-items: center;
   }
   .avatarM img {
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 300px;
   }
   .avatarM .tableM {
     height: 10px;
     background-color: #272727;
     width: 100%;
   }
-}
-@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
-  .avatarM img {
-    height: 350px;
-    width: 300px;
-  }
-}
-@media screen and (max-width: 440px) {
   .mainM {
     width: 95%;
     height: 40%;
     display: flex;
     z-index: 15;
-    transform: translateY(-440px);
+    transform: translateY(-300px);
   }
-}
-@media screen and (max-width: 440px) and (max-aspect-ratio: 20/9) {
-  .mainM {
-    transform: translateY(-290px);
-  }
-}
-@media screen and (max-width: 440px) {
   .mainM .introM {
     font-family: "CascadiaCodeBold";
     font-size: 1em;

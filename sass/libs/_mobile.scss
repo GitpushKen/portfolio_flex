@@ -137,20 +137,7 @@ body {
             background-color: $primary;
         }
 
-        @media screen and (max-aspect-ratio: 20/9) {
-            display: flex;
-            width: 80%;
-            height: 400px;
-            transform: translateY(-300%);
-            transition: 0.4s;
-            font-size: 0.9em;
-            font-family: "CascadiaCodeBold";
-            color: #858585;
-
-            &.active {
-                transform: translateY(20%);
-            }
-        }
+        
     }
 
     .systeM {
@@ -164,7 +151,7 @@ body {
         color: #858585;
 
         &.active {
-            transform: translateY(-80%);
+            transform: translateY(-60%);
         }
 
         ul {
@@ -175,20 +162,7 @@ body {
             color: $highlights;
         }
 
-        @media screen and (max-aspect-ratio: 20/9) {
-            display: flex;
-            width: 80%;
-            height: 400px;
-            transform: translateY(-300%);
-            transition: 0.4s;
-            font-size: 0.9em;
-            font-family: "CascadiaCodeBold";
-            color: #858585;
-
-            &.active {
-                transform: translateY(-30%);
-            }
-        }
+        
     }
 
 }
@@ -222,8 +196,8 @@ body {
     align-items: center;
 
     img {
-        height: 400px;
-        width: 350px;
+        height: 350px;
+        width: 300px;
     }
 
     .tableM {
@@ -232,13 +206,6 @@ body {
         width: 100%;
     }
 
-    @media screen and (max-aspect-ratio: 20/9) {
-        img {
-            height: 350px;
-            width: 300px;
-        }
-    
-    }
 }
 
 .mainM {
@@ -246,12 +213,9 @@ body {
     height: 40%;
     display: flex;
     z-index: 15;
-    transform: translateY(-440px);
+    transform: translateY(-300px);
 
-    @media screen and (max-aspect-ratio: 20/9) {
-        transform: translateY(-290px);
-    
-    }
+
 
     .introM {
         font-family: "CascadiaCodeBold";
