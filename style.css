@@ -1074,7 +1074,7 @@ ul {
     color: #858585;
   }
   .specsM .systeM.active {
-    transform: translateY(-40%);
+    transform: translateY(-30%);
   }
 }
 @media screen and (max-width: 440px) {
@@ -1128,7 +1128,7 @@ ul {
 }
 @media screen and (max-width: 440px) and (max-width: 380px) {
   .mainM {
-    transform: translateY(-310px);
+    transform: translateY(-290px);
   }
 }
 @media screen and (max-width: 440px) {

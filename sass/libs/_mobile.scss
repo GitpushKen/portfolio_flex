@@ -186,7 +186,7 @@ body {
             color: #858585;
 
             &.active {
-                transform: translateY(-40%);
+                transform: translateY(-30%);
             }
         }
     }
@@ -249,7 +249,7 @@ body {
     transform: translateY(-440px);
 
     @media screen and (max-width:380px) {
-        transform: translateY(-310px);
+        transform: translateY(-290px);
     }
     
     .introM {
