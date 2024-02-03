@@ -1123,6 +1123,7 @@ ul {
     align-items: center;
     font-family: "CascadiaCodeBold";
     background-color: #333333;
+    z-index: 300;
   }
   .nav2 {
     height: 50px;
