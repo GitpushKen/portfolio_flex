@@ -210,6 +210,10 @@ body {
     display: flex;
     z-index: 15;
     transform: translateY(-440px);
+
+    @media screen and (max-width:376px) {
+        transform: translateY(-330px);
+    }
     
     .introM {
         font-family: "CascadiaCodeBold";
@@ -223,6 +227,8 @@ body {
         &.inactive {
             opacity: 0;
         }
+
+        
     }
 }
 
@@ -245,8 +251,8 @@ body {
 
     .back {
         display: flex;
-        position: fixed;
-        bottom: 0px;
+        position: absolute;
+        bottom: 0;
         height: 40px;
         width: 100%;
         color: #858585;
