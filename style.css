@@ -1370,13 +1370,57 @@ ul {
   }
 }
 @media screen and (max-width: 1281px) {
-  .intro {
+  .whyDev {
     display: flex;
     flex-direction: column;
     width: 95%;
     height: auto;
   }
-  .intro p {
+  .whyDev p {
+    margin-bottom: 5px;
+  }
+  .interest {
+    width: 95%;
+    height: 95%;
+  }
+  .page {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+  .OSburger.down {
+    transform: translateY(140%);
+  }
+  .pagePres {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 95%;
+    height: 90%;
+    gap: 10px;
+    font-family: "CascadiaCodeBold";
+    line-break: normal;
+    color: #9b9b9b;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    display: none;
+    line-height: 1.3em;
+    font-size: 1em;
+    overflow-y: scroll;
+  }
+  .pagePres.active {
+    display: flex;
+  }
+  .pagePres .intro {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+  .pagePres .intro p {
     margin-bottom: 5px;
   }
   .moiPres {
@@ -1387,56 +1431,22 @@ ul {
     margin-bottom: 5px;
   }
 }
-.whyDev {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  height: auto;
-}
-.whyDev p {
-  margin-bottom: 5px;
-}
-
-.interest {
-  width: 95%;
-  height: 95%;
-}
-
-.page {
-  display: flex;
-  position: absolute;
-  top: 50px;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-}
-
-.OSburger.down {
-  transform: translateY(140%);
-}
-
-.pagePres {
-  position: relative;
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 95%;
-  height: 90%;
-  gap: 10px;
-  font-family: "CascadiaCodeBold";
-  line-break: normal;
-  color: #9b9b9b;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
-  display: none;
-  line-height: 1.3em;
-  font-size: 1em;
-  overflow-y: scroll;
-}
-.pagePres.active {
-  display: flex;
-}
-
 @media screen and (max-height: 750px) {
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    z-index: 450;
+    justify-content: flex-end;
+    position: absolute;
+    align-items: center;
+    width: 150px;
+    height: 180px;
+  }
+  .avatar img {
+    width: 150px;
+    height: 180px;
+    bottom: 0;
+  }
   .pagePres {
     position: relative;
     display: none;
@@ -1455,19 +1465,6 @@ ul {
   }
   .pagePres.active {
     display: flex;
-  }
-  .pagePres .avatar {
-    display: flex;
-    flex-direction: column;
-    z-index: 450;
-    justify-content: flex-end;
-    position: absolute;
-    align-items: center;
-  }
-  .pagePres .avatar img {
-    width: 150px;
-    height: 180px;
-    bottom: 0;
   }
   .nav {
     display: flex;

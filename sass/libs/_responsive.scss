@@ -14,29 +14,6 @@
 
 @media screen and (max-width: 1281px){
 
-  .intro {
-
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    height: auto;
-
-    p {
-      margin-bottom: 5px;
-    }
-}
-
-.moiPres {
-    width: 95%;
-    height: auto;
-
-    p {
-      margin-bottom: 5px;
-    }
-}
-
-}
-
 .whyDev {
   display: flex;
   flex-direction: column;
@@ -55,7 +32,7 @@
 }
 
 
-  .page {
+.page {
     display: flex;
     position: absolute;
     top: 50px;
@@ -64,12 +41,12 @@
     width: 100%;
 }
 
-  .OSburger.down {
+.OSburger.down {
     transform: translateY(140%);
 }
 
 
-  .pagePres {
+.pagePres {
     position: relative;
     display: none;
     flex-direction: column;
@@ -90,14 +67,51 @@
       display: flex;
   }
 
+    .intro {
+
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      height: auto;
+
+      p {
+        margin-bottom: 5px;
+      }
+  }  
+}
 
 
-  
+  .moiPres {
+    width: 95%;
+    height: auto;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 
 
 @media screen and (max-height: 750px){
+
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    z-index: 450;
+    justify-content:flex-end;
+    position: absolute;
+    align-items: center;
+    width: 150px;
+    height: 180px;
+
+    img {
+      width: 150px;
+      height: 180px;
+      bottom: 0;
+    }
+  }
+
   
 
   .pagePres {
@@ -121,23 +135,7 @@
   }
 
 
-  .avatar {
-    display: flex;
-    flex-direction: column;
-    z-index: 450;
-    justify-content:flex-end;
-    position: absolute;
-    align-items: center;
-
-    
-
-    img {
-      width: 150px;
-      height: 180px;
-      bottom: 0;
-    }
-  }
-
+  
 }
 
 .nav {
