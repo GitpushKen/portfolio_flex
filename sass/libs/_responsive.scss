@@ -33,15 +33,24 @@
     &.active {
       display: flex;
   }
-  
+
+ 
 }
+
+
+
 
 .nav {
   display: flex;
   z-index: 20;
   background-color: #212121;
   width: 100vw;
+  min-width: 775px;
   height: 50px;
+}
+
+.page {
+  min-width: 775px;
 }
 
 .contact, .projets, .presentation, .chara {
