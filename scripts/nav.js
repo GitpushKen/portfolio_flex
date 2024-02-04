@@ -232,24 +232,41 @@ const osBurger = document.querySelector(".OSburger")
 const system = document.querySelector('.system')
 const panel = document.querySelector('.panel')
 
+let keyShort = new Audio("../assets/sounds/keyboard/short_sentences.mp3");
+let keyShorter = new Audio("../assets/sounds/keyboard/short_words.mp3");
+let keyMid = new Audio("../assets/sounds/keyboard/med_sentences.mp3");
+
 
 button.addEventListener("click", toggleNav)
 
 function toggleNav(){
     button.classList.toggle("active")
     navigation.classList.toggle("active")
+    keyIdPlayed = false;
+    keyOsPlayed = false;
+    keyShort.pause()
+
 }
 
 /* ID */
 
 id.addEventListener("click", toggleID)
 
+let keyIdPlayed = false;
+let keyOsPlayed = false;
+
 function toggleID(){
         id.classList.toggle("active")
         identity.classList.toggle("active")
         idBurger.classList.toggle("down")
         osBurger.classList.toggle("down")
-
+        if (!keyIdPlayed) {
+            keyShort.play()
+            keyIdPlayed = true;
+        } else {
+            keyShort.pause()
+            keyIdPlayed = false;
+        }
 }
 
 button.addEventListener("click", toggleOffID)
@@ -268,6 +285,13 @@ os.addEventListener("click", toggleOS)
 function toggleOS(){
         os.classList.toggle("active")
         system.classList.toggle("active")
+        if (!keyOsPlayed) {
+            keyShort.play()
+            keyOsPlayed = true;
+        } else {
+            keyShort.pause()
+            keyOsPlayed = false;
+        }
 }
 
 button.addEventListener("click", toggleOffOS)
@@ -282,12 +306,12 @@ function toggleOffOS(){
 
 const play = document.getElementById("musicToggle");
 let audio = new Audio("../assets/sounds/Lofi-sample.mp3")
-
 let music = false; 
 
 function playMusic() {
     if (!music) {;
     audio.play()
+    audio.volume = 0.45;
     music = true;
     console.log(music)
     } else { 
@@ -297,3 +321,4 @@ function playMusic() {
 }
 
 play.addEventListener('click', playMusic);
+
