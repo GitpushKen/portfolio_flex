@@ -322,3 +322,24 @@ function playMusic() {
 
 play.addEventListener('click', playMusic);
 
+const paper = document.querySelector(".enveloppe");
+
+let paperFlip = new Audio("../../portfolio_flex/assets/sounds/paper.mp3")
+let paperPlayed = false;
+
+paper.addEventListener('mouseenter', paperSound)
+paper.addEventListener('mouseleave', paperOff)
+
+function paperSound() {
+    if (!paperPlayed) {
+        paperFlip.play()
+        paperFlip.volume = 0.60;
+        paperPlayed = true;
+    }
+}
+
+function paperOff() {
+    
+        paperPlayed = false;
+    
+}
