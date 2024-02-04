@@ -314,9 +314,11 @@ function playMusic() {
     audio.volume = 0.45;
     music = true;
     console.log(music)
+    play.classList.toggle("active")
     } else { 
         audio.pause()
         music = false;
+        play.classList.remove("active")
     }
 }
 
