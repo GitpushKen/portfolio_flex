@@ -14,6 +14,11 @@
 
 @media screen and (max-width: 1281px){
 
+  .OSburger.down {
+    transform: translateY(140%);
+}
+
+
   .pagePres {
     position: relative;
     display: none;
@@ -34,11 +39,35 @@
       display: flex;
   }
 
- 
+
+
+  
 }
 
 
 
+@media screen and (max-height: 750px){
+  
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    z-index: 450;
+    justify-content:flex-end;
+    position: absolute;
+    align-items: center;
+
+    
+
+    img {
+      width: 150px;
+      height: 180px;
+      bottom: 0;
+
+
+    }
+  }
+
+}
 
 .nav {
   display: flex;
@@ -104,7 +133,12 @@
         padding-bottom: 5px;
     }
     
-        
+      
+    .OSburger.down {
+      transform: translateY(145%);
+  }
+  
+
     .contact, .projets, .presentation, .chara {
         font-size: 1em;
         padding-left: 15px;

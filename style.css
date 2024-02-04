@@ -1370,6 +1370,9 @@ ul {
   }
 }
 @media screen and (max-width: 1281px) {
+  .OSburger.down {
+    transform: translateY(140%);
+  }
   .pagePres {
     position: relative;
     display: none;
@@ -1389,6 +1392,23 @@ ul {
   .pagePres.active {
     display: flex;
   }
+}
+@media screen and (max-width: 1281px) and (max-height: 750px) {
+  .avatar {
+    display: flex;
+    flex-direction: column;
+    z-index: 450;
+    justify-content: flex-end;
+    position: absolute;
+    align-items: center;
+  }
+  .avatar img {
+    width: 150px;
+    height: 180px;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 1281px) {
   .nav {
     display: flex;
     z-index: 20;
@@ -1440,6 +1460,9 @@ ul {
   .OS {
     font-size: 0.8em;
     padding-bottom: 5px;
+  }
+  .OSburger.down {
+    transform: translateY(145%);
   }
   .contact, .projets, .presentation, .chara {
     font-size: 1em;
