@@ -277,8 +277,23 @@ function toggleOffOS(){
         system.classList.remove("active")
 }
 
-/* Mobile */
 
+/* music */
 
+const play = document.getElementById("musicToggle");
+let audio = new Audio("../assets/sounds/Lofi-sample.mp3")
 
+let music = false; 
 
+function playMusic() {
+    if (!music) {;
+    audio.play()
+    music = true;
+    console.log(music)
+    } else { 
+        audio.pause()
+        music = false;
+    }
+}
+
+play.addEventListener('click', playMusic);

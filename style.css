@@ -114,6 +114,24 @@ button.active {
   border: none;
 }
 
+#musicToggle {
+  position: absolute;
+  top: 3rem;
+  left: 20.1rem;
+  height: 50px;
+  width: 60px;
+  z-index: 510;
+  display: flex;
+  font-family: "CascadiaCodeBold";
+  justify-content: center;
+  align-items: center;
+  color: #656565;
+  font-size: 1em;
+}
+#musicToggle:hover {
+  color: #ffbb00;
+}
+
 h4 {
   padding-left: 10px;
 }
