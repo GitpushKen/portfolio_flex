@@ -232,9 +232,9 @@ const osBurger = document.querySelector(".OSburger")
 const system = document.querySelector('.system')
 const panel = document.querySelector('.panel')
 
-let keyShort = new Audio("../assets/sounds/keyboard/short_sentences.mp3");
-let keyShorter = new Audio("../assets/sounds/keyboard/short_words.mp3");
-let keyMid = new Audio("../assets/sounds/keyboard/med_sentences.mp3");
+let keyShort = new Audio("../portfolio_flex/assets/sounds/keyboard/short_sentences.mp3");
+let keyShorter = new Audio("../portfolio_flex/assets/sounds/keyboard/short_words.mp3");
+let keyMid = new Audio("../portfolio_flex/assets/sounds/keyboard/med_sentences.mp3");
 
 
 button.addEventListener("click", toggleNav)
@@ -305,7 +305,7 @@ function toggleOffOS(){
 /* music */
 
 const play = document.getElementById("musicToggle");
-let audio = new Audio("../assets/sounds/Lofi-sample.mp3")
+let audio = new Audio("../portfolio_flex/assets/sounds/Lofi-sample.mp3")
 let music = false; 
 
 function playMusic() {
