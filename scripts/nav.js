@@ -305,7 +305,7 @@ function toggleOffOS(){
 /* music */
 
 const play = document.getElementById("musicToggle");
-let audio = new Audio("../portfolio_flex/assets/sounds/Lofi-sample.mp3")
+let audio = new Audio("../../portfolio_flex/assets/sounds/Lofi-sample.mp3")
 let music = false; 
 
 function playMusic() {
