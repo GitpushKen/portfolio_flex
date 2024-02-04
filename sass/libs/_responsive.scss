@@ -14,6 +14,56 @@
 
 @media screen and (max-width: 1281px){
 
+  .intro {
+
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+
+    p {
+      margin-bottom: 5px;
+    }
+}
+
+.moiPres {
+    width: 95%;
+    height: auto;
+
+    p {
+      margin-bottom: 5px;
+    }
+}
+
+}
+
+.whyDev {
+  display: flex;
+  flex-direction: column;
+    width: 95%;
+    height: auto;
+
+    p {
+      margin-bottom: 5px;
+    }
+}
+
+.interest {
+
+    width: 95%;
+    height: 95%;
+}
+
+
+  .page {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
   .OSburger.down {
     transform: translateY(140%);
 }
@@ -23,9 +73,10 @@
     position: relative;
     display: none;
     flex-direction: column;
+    justify-content: flex-start;
     width: 95%;
-    height: 95%;
-    gap: 30px;
+    height: 90%;
+    gap: 10px;
     font-family: "CascadiaCodeBold";
     line-break: normal;
     color: #9b9b9b;
@@ -48,6 +99,28 @@
 
 @media screen and (max-height: 750px){
   
+
+  .pagePres {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    width: 95%;
+    height: 80%;
+    font-family: "CascadiaCodeBold";
+    line-break: normal;
+    color: #9b9b9b;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    display: none;
+    line-height: 1.3em;
+    font-size: 1em;
+
+    margin: 0;
+    padding: 0;
+    &.active {
+      display: flex;
+  }
+
+
   .avatar {
     display: flex;
     flex-direction: column;
@@ -62,8 +135,6 @@
       width: 150px;
       height: 180px;
       bottom: 0;
-
-
     }
   }
 
@@ -387,4 +458,4 @@
     }
     
     }
-    
+  
