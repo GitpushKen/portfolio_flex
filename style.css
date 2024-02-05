@@ -329,12 +329,12 @@ h4 {
 
 /* Zone principale */
 .container_main {
+  padding-top: 20px;
   width: 100%;
   height: 100%;
   background-color: #272727;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .pagePres {
@@ -1400,8 +1400,7 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     width: 95%;
-    height: 90%;
-    gap: 10px;
+    height: 95%;
     font-family: "CascadiaCodeBold";
     line-break: normal;
     color: #9b9b9b;
